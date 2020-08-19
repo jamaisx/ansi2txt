@@ -1,0 +1,21 @@
+                  ansi2txt
+
+
+Build
+-----
+
+To build ansi2txt simply make the binary:
+
+% make
+
+Check BINPATH and MANPATH in Makefile are suitable for your system.
+
+Install
+-------
+
+To install :
+
+% make install
+
+
+

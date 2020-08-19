@@ -1,0 +1,48 @@
+.TH "ansi2txt" 1
+.SH NAME
+ansi2txt \- Translates vt100 codes into readable text (or html)
+.SH SYNOPSIS
+.B ansi2txt
+[OPTION] [INPUT FILE]
+
+.B ansi2html
+[OPTION] [INPUT FILE]
+.SH DESCRIPTION
+Ansi2txt converts a stream of vt100 (ansi) codes on the stdin
+into readable text on the stdout. An INPUT file can be specified
+instead of stdin.
+
+Ansi2html (ansi2txt -html) renders the vt100 codes into a html
+file that looks quite a lot like your terminal did.
+.SH OPTIONS
+.TP
+.B \-w WIDTH
+If specified the output rendering screen will be limited to WIDTH
+characters wide.
+.TP
+.B \-h HEIGHT
+If specified the output rendering screen will be limited to HEIGHT
+character rows, overflow will overprint.
+.TP
+.B \-rv
+Reverse video
+.TP
+.B \-html
+Output as html
+.TP
+.B \-txt
+Output as text
+.TP
+.B \-refresh secs
+In html mode add <meta http-equiv="refresh" content="secs"> to <head>
+.TP
+.B \-v
+Version
+.TP
+.B \--help
+Displays usage information
+.SH BUGS
+Double height text in html mode only renders the top row, the bottom
+double height text row is not rendered. Double width is rendered as
+ordinary characters separated by spaces. Scrolling windows are not
+implemented.

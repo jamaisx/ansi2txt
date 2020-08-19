@@ -1,0 +1,4 @@
+0.2.2: Implemented ESC [ # d and ESC [ # e vertical cursor positioning
+       Corrected erase screen/line not clearing mode information correctly
+
+0.2.1: First Release
